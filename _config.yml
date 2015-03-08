@@ -1,4 +1,4 @@
 name: Six Leaves
 markdown: redcarpet
 highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "bower_components", "bower.json"]
