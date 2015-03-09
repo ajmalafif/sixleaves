@@ -1,7 +1,7 @@
 {
-    "name": "six-leaves",
-    "dependencies": {
-        "bootstrap": "*",
-        "jquery": "*"
-    }
+  "name": "six-leaves",
+  "dependencies": {
+    "jquery": "*",
+    "bootstrap": "~3.3.2"
+  }
 }

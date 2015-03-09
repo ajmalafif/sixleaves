@@ -21,9 +21,11 @@ var messages = {
  gulp.task('bower', function() {
   return gulp.src(mainBowerFiles({
     paths: {
-            bowerDirectory: './bower_components'
-        }
-  }), { base: './bower_components' })
+      bowerDirectory: './bower_components',
+      bowerJson: './bower.json'
+    },
+    includeDev: true
+  }))
   .pipe(gulp.dest('_scss'))
 });
 
