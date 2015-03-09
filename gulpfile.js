@@ -1,4 +1,6 @@
 var gulp            = require('gulp');
+var flatten         = require('gulp-flatten');
+var gulpFilter      = require('gulp-filter');
 var browserSync     = require('browser-sync');
 var sass            = require('gulp-sass');
 var prefix          = require('gulp-autoprefixer');
@@ -15,18 +17,33 @@ var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-/**
- * Main Bower File
- */
- gulp.task('bower', function() {
-  return gulp.src(mainBowerFiles({
-    paths: {
-      bowerDirectory: './bower_components',
-      bowerJson: './bower.json'
-    },
-    includeDev: true
-  }))
-  .pipe(gulp.dest('_scss'))
+console.log(mainBowerFiles());
+// grab libraries files from bower_components, minify and push in /public
+gulp.task('bower', function() {
+
+  var jsFilter = gulpFilter('*.js');
+    var cssFilter = gulpFilter('*.css');
+    var fontFilter = gulpFilter(['*.eot', '*.woff', '*.svg', '*.ttf']);
+
+  return gulp.src(mainBowerFiles())
+
+  // grab vendor js files from bower_components, minify and push in /public
+  .pipe(jsFilter)
+  .pipe(gulp.dest('assets/javascripts/'))
+  .pipe(gulp.dest('assets/javascripts/'))
+  .pipe(jsFilter.restore())
+
+  // grab vendor css files from bower_components, minify and push in /public
+  .pipe(cssFilter)
+  .pipe(gulp.dest('assets/stylesheets/'))
+  .pipe(gulp.dest('assets/stylesheets/'))
+  .pipe(cssFilter.restore())
+
+  // grab vendor font files from bower_components and push in /public
+  .pipe(fontFilter)
+  .pipe(flatten())
+  .pipe(gulp.dest('assets/fonts'));
+
 });
 
 /**

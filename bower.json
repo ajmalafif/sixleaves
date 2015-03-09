@@ -3,5 +3,5 @@
   "dependencies": {
     "jquery": "*",
     "bootstrap": "~3.3.2"
-  }
+    }
 }
