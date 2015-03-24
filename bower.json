@@ -2,6 +2,7 @@
   "name": "six-leaves",
   "dependencies": {
     "jquery": "*",
-    "bootstrap": "~3.3.2"
-    }
+    "bootstrap": "~3.3.2",
+    "modernizr": "~2.8.3"
+  }
 }
