@@ -1,13 +1,13 @@
-jekyll-gulp-sass-browser-sync
-=============================
+# Six Leaves
 
-A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
+## First time setup
 
-Here's a 1.5min [screencast](http://quick.as/pvrslgx) showing what you get.
+1. `npm install`
 
-And here's a GIF showing the CSS injecting.
 
-![GIF](http://f.cl.ly/items/373y2E0e0i2p0E2O131g/test-gif.gif)
+hr
+
+# Original README
 
 ## System Preparation
 
