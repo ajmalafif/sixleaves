@@ -3,11 +3,16 @@ layout: h5bp
 title: Our Work
 ---
 
-.work.work-index
+.container-fluid.container-title
   .container
-    ul.posts
-      | {% for post in site.posts %}
+    h1 Previous Work
+    h5.subtitle We build and accelerate impactful companies. Every project is a lean start-up, supercharged by a multi-disciplinary team tackling strategy, design, and engineering in a cohesive, iterative fashion.
+
+.container-fluid.work.work-index
+  .container
+    ul.works
+      | {% for work in site.works %}
       li
-        span  { post.date | date_to_string }
-        a href=("{{ post.url }}") {{ post.title }}
+        span  { work.date | date_to_string }
+        a href=("{{ work.url }}") {{ work.title }}
       | {% endfor %}

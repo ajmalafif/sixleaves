@@ -25,7 +25,6 @@ var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-console.log(mainBowerFiles());
 // grab libraries files from bower_components, minify and push in /public
 gulp.task('bower', function() {
 
@@ -110,7 +109,7 @@ gulp.task('bower', function() {
  gulp.task('watch', function () {
   gulp.watch('assets/javascripts/*.js');
   gulp.watch('assets/stylesheets/*.scss', ['sass']);
-  gulp.watch(['index.{html,slim}', '_layouts/*.{html,slim}', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
+  gulp.watch(['index.{html,slim}', '_layouts/*.{html,slim}', '_posts/*', '_includes/*', '_works/*', 'work/*', 'about/*'], ['jekyll-rebuild']);
 });
 
 /**

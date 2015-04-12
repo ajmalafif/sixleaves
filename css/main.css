@@ -5203,6 +5203,64 @@ button.close {
     display: none !important; } }
 
 /*# sourceMappingURL=bootstrap.css.map */
+.container-title {
+  background-color: #136a8a;
+  color: #fff;
+  height: 300px;
+  padding-top: 100px;
+  /* Chrome 10+, Saf5.1+ */
+  /* FF3.6+ */
+  /* IE10 */
+  /* Opera 11.10+ */
+  background: linear-gradient(90deg, #136a8a 10%, #267871 90%);
+  /* W3C */ }
+
+.vertical-centering-outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.vertical-centering-middle {
+  background-color: #136a8a;
+  display: table-cell;
+  vertical-align: middle;
+  /* Chrome 10+, Saf5.1+ */
+  /* FF3.6+ */
+  /* IE10 */
+  /* Opera 11.10+ */
+  background: linear-gradient(90deg, #136a8a 10%, #267871 90%);
+  /* W3C */ }
+
+.vertical-centering-inner {
+  margin-left: auto;
+  margin-right: auto; }
+
 body {
-  background: #fff;
-  padding-top: 70px; }
+  background: transparent; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; }
+
+p {
+  font-family: 'Gentium Book Basic', serif; }
+
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin-bottom: 0;
+  background-color: transparent;
+  background: transparent;
+  border: 0; }
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: #f9f9f9; }
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
+  color: #fff; }
+
+.navbar-nav {
+  text-transform: uppercase; }
+
+#home {
+  color: #fff; }

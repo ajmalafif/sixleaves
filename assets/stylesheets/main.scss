@@ -1,5 +1,46 @@
 @import "bootstrap";
+@import "layout";
+
 body {
-    background: #fff;
-    padding-top: 70px;
+    background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Gentium Book Basic', serif;
+}
+
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin-bottom: 0;
+  background-color: transparent;
+  background: transparent;
+  border: 0;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #f9f9f9;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+}
+
+.navbar-nav {
+  text-transform: uppercase;
+}
+
+#home {
+  color: #fff;
 }

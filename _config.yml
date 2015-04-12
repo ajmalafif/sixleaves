@@ -6,3 +6,6 @@ defaults:
   -
     values:
       layout: "h5bp"
+collections:
+  works:
+    output: true
