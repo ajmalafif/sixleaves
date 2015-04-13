@@ -1,0 +1,23 @@
+.works-item {
+  font-family: "proxima-nova",Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #616367;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+}
+
+.works-info {
+  position: relative;
+  z-index: 2;
+  line-height: 1.3;
+  padding: 80px 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.works-item a {
+  color: #616367;
+}

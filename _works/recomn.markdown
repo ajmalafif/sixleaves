@@ -1,7 +1,9 @@
 ---
 title:  "Recomn"
 date:   2015-03-20 09:11:03
-categories: work project
+categories: work
+tags: [rails, bootstrap]
+description: "Back-end modules & features"
 ---
 
 {% highlight ruby %}

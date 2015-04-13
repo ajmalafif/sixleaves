@@ -3,6 +3,8 @@ layout: work
 title:  "Supahands"
 date:   2015-03-20 09:11:03
 categories: work project
+tags: [rails, bootstrap]
+description: "Back-end & Front-end"
 ---
 
 {% highlight ruby %}

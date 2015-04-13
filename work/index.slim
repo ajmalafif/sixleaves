@@ -6,13 +6,20 @@ title: Our Work
 .container-fluid.container-title
   .container
     h1 Previous Work
-    h5.subtitle We build and accelerate impactful companies. Every project is a lean start-up, supercharged by a multi-disciplinary team tackling strategy, design, and engineering in a cohesive, iterative fashion.
+    h3 Projects & startups we've worked with.
 
-.container-fluid.work.work-index
-  .container
-    ul.works
-      | {% for work in site.works %}
-      li
-        span  { work.date | date_to_string }
-        a href=("{{ work.url }}") {{ work.title }}
-      | {% endfor %}
+.works.works-index
+  {% for work in site.works %}
+  .works-item
+    .container.works-info
+      a href=("{{ work.url }}")
+        h1.text-uppercase {{ work.title }}
+      span {{ work.description }}
+      br
+      .tags
+        {% for tag in work.tags %}
+        span.glyphicon.glyphicon-tag
+        span {{ tag }}
+        {% endfor %}
+
+  {% endfor %}

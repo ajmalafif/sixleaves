@@ -5204,7 +5204,7 @@ button.close {
 
 /*# sourceMappingURL=bootstrap.css.map */
 .container-title {
-  background-color: #136a8a;
+  background-color: #232c39;
   color: #fff;
   height: 300px;
   padding-top: 100px;
@@ -5212,7 +5212,7 @@ button.close {
   /* FF3.6+ */
   /* IE10 */
   /* Opera 11.10+ */
-  background: linear-gradient(90deg, #136a8a 10%, #267871 90%);
+  background: linear-gradient(90deg, #232c39 10%, #267871 90%);
   /* W3C */ }
 
 .vertical-centering-outer {
@@ -5222,19 +5222,40 @@ button.close {
   width: 100%; }
 
 .vertical-centering-middle {
-  background-color: #136a8a;
+  background-color: #232c39;
   display: table-cell;
   vertical-align: middle;
   /* Chrome 10+, Saf5.1+ */
   /* FF3.6+ */
   /* IE10 */
   /* Opera 11.10+ */
-  background: linear-gradient(90deg, #136a8a 10%, #267871 90%);
+  background: linear-gradient(90deg, #232c39 10%, #267871 90%);
   /* W3C */ }
 
 .vertical-centering-inner {
   margin-left: auto;
   margin-right: auto; }
+
+.works-item {
+  font-family: "proxima-nova", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #616367;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; }
+
+.works-info {
+  position: relative;
+  z-index: 2;
+  line-height: 1.3;
+  padding: 80px 15px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.works-item a {
+  color: #616367; }
 
 body {
   background: transparent; }
@@ -5254,13 +5275,61 @@ p {
   border: 0; }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
-  color: #f9f9f9; }
+  color: #788D9E;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
   color: #fff; }
 
 .navbar-nav {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 12px; }
 
 #home {
   color: #fff; }
+
+footer {
+  color: #232c39;
+  text-align: center;
+  background: #05435c none repeat scroll 0% 0%/auto padding-box border-box;
+  border: 0px none #333333;
+  font: normal normal normal normal 20px/30px 'Lyon Text Web', Georgia, serif;
+  outline: #333333 none 0px;
+  padding: 43px 0px 40px; }
+
+.contact {
+  color: white;
+  position: relative;
+  text-align: center;
+  border: 0px none white;
+  font: normal normal normal normal 20px/30px 'Lyon Text Web', Georgia, serif;
+  outline: white none 0px;
+  padding: 0px 90.45312px; }
+
+.contact:after {
+  clear: both;
+  color: white;
+  display: table;
+  text-align: center;
+  content: '';
+  border: 0px none white;
+  font: normal normal normal normal 20px/30px 'Lyon Text Web', Georgia, serif;
+  outline: white none 0px; }
+
+.contact h1 {
+  color: white;
+  height: 40px;
+  text-align: center;
+  border: 0px none white;
+  font: normal normal normal normal 27px/40px 'Lyon Text Web', Georgia, serif;
+  margin: 0px;
+  outline: white none 0px;
+  padding: 0px 0px 32px; }
+
+.glyphicon {
+  top: 3px;
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.tags {
+  color: #ccc; }

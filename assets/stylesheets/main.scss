@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "layout";
+@import "works";
 
 body {
     background: transparent;
@@ -29,7 +30,8 @@ p {
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
-  color: #f9f9f9;
+  color: #788D9E;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navbar-default .navbar-brand:hover,
@@ -39,8 +41,61 @@ p {
 
 .navbar-nav {
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 #home {
   color: #fff;
+}
+
+footer {
+    color: #232c39;
+    text-align: center;
+    background: rgb(5, 67, 92) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 20px/30px 'Lyon Text Web', Georgia, serif;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 43px 0px 40px;
+}
+
+.contact {
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal normal normal 20px/30px 'Lyon Text Web', Georgia, serif;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 0px 90.453125px;
+}
+
+.contact:after {
+    clear: both;
+    color: rgb(255, 255, 255);
+    display: table;
+    text-align: center;
+    content: '';
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal normal normal 20px/30px 'Lyon Text Web', Georgia, serif;
+    outline: rgb(255, 255, 255) none 0px;
+}
+
+.contact h1 {
+    color: rgb(255, 255, 255);
+    height: 40px;
+    text-align: center;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal normal normal 27px/40px 'Lyon Text Web', Georgia, serif;
+    margin: 0px;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 0px 0px 32px;
+}
+
+.glyphicon {
+  top: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.tags {
+  color: #ccc;
 }
