@@ -109,7 +109,7 @@ gulp.task('bower', function() {
  gulp.task('watch', function () {
   gulp.watch('assets/javascripts/*.js');
   gulp.watch('assets/stylesheets/*.scss', ['sass']);
-  gulp.watch(['index.{html,slim}', '_layouts/*.{html,slim}', '_posts/*', '_includes/*', '_works/*', 'work/*', 'about/*'], ['jekyll-rebuild']);
+  gulp.watch(['index.{html,slim}', '_layouts/*.{html,slim}', '_posts/*', '_includes/*', '_works/*', 'work/*', 'about/*', 'contact/*'], ['jekyll-rebuild']);
 });
 
 /**
