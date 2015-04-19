@@ -5236,6 +5236,33 @@ button.close {
   margin-left: auto;
   margin-right: auto; }
 
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin-bottom: 0;
+  background-color: transparent;
+  background: transparent;
+  border: 0; }
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: #788D9E;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
+  color: #fff; }
+
+.navbar-nav {
+  text-transform: uppercase;
+  font-size: 12px; }
+
+.navbar-color {
+  background-color: #232c39;
+  transition: all 250ms ease-in-out; }
+
+.navbar-transparent {
+  background-color: transparent;
+  transition: all 500ms ease-in-out; }
+
 .works-item {
   font-family: "proxima-nova", Helvetica, sans-serif;
   font-size: 14px;
@@ -5265,25 +5292,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: 'Gentium Book Basic', serif; }
-
-.navbar {
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  margin-bottom: 0;
-  background-color: transparent;
-  background: transparent;
-  border: 0; }
-
-.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
-  color: #788D9E;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
-
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
-  color: #fff; }
-
-.navbar-nav {
-  text-transform: uppercase;
-  font-size: 12px; }
 
 #home {
   color: #fff; }

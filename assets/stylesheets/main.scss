@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "layout";
+@import "navbar";
 @import "works";
 
 body {
@@ -17,31 +18,6 @@ h6 {
 
 p {
   font-family: 'Gentium Book Basic', serif;
-}
-
-.navbar {
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  margin-bottom: 0;
-  background-color: transparent;
-  background: transparent;
-  border: 0;
-}
-
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav > li > a {
-  color: #788D9E;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-nav > li > a:hover {
-  color: #fff;
-}
-
-.navbar-nav {
-  text-transform: uppercase;
-  font-size: 12px;
 }
 
 #home {
