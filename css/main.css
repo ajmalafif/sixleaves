@@ -5203,6 +5203,9 @@ button.close {
     display: none !important; } }
 
 /*# sourceMappingURL=bootstrap.css.map */
+.container-work {
+  margin-top: 4em; }
+
 .container-title {
   background-color: #232c39;
   color: #fff;
@@ -5256,7 +5259,8 @@ button.close {
   font-size: 12px; }
 
 .navbar-color {
-  background-color: #232c39;
+  background-color: #2d3436;
+  color: #eee;
   transition: all 250ms ease-in-out; }
 
 .navbar-transparent {
