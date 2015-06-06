@@ -1,11 +1,9 @@
 # Six Leaves
 
-## First time setup
+## First time setup (run in terminal)
 
 1. `npm install`
-
-
-hr
+2. `bower install`
 
 # Original README
 
