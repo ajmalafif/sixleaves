@@ -1,0 +1,38 @@
+.container-work {
+  margin-top: 4em;
+}
+
+.container-title {
+  background-color: #232c39;
+  color: #fff;
+  height: 300px;
+  padding-top: 100px;
+  background: -webkit-linear-gradient(90deg, #232c39 10%, #267871 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #232c39 10%, #267871 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #232c39 10%, #267871 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #232c39 10%, #267871 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #232c39 10%, #267871 90%); /* W3C */
+}
+
+.vertical-centering-outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.vertical-centering-middle {
+  background-color: #232c39;
+  display: table-cell;
+  vertical-align: middle;
+  background: -webkit-linear-gradient(90deg, #232c39 10%, #267871 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #232c39 10%, #267871 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #232c39 10%, #267871 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #232c39 10%, #267871 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #232c39 10%, #267871 90%); /* W3C */
+}
+
+.vertical-centering-inner {
+  margin-left: auto;
+  margin-right: auto;
+}
