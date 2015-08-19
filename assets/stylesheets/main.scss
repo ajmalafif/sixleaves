@@ -85,6 +85,32 @@ footer {
 }
 
 .m-scene .scene_element--fadein {
+  animation-name: fadeIn;
+}
+
+.m-scene.is-exiting .scene_element {
+  animation-direction: alternate-reverse;
+}
+
+/*
+ * Keyframes
+ */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*
+ * CSS Animations
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene .scene_element {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.m-scene .scene_element--fadeinright {
   animation-name: fadeInRight;
 }
 
@@ -95,7 +121,24 @@ footer {
 /*
  * Keyframes
  */
-@keyframes fadeInRight {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
+ @-webkit-keyframes fadeInRight {
+   0% {
+     opacity: 0;
+     -webkit-transform: translate3d(100%, 0, 0);
+     transform: translate3d(100%, 0, 0); }
+   100% {
+     opacity: 1;
+     -webkit-transform: none;
+     transform: none; } }
+ @keyframes fadeInRight {
+   0% {
+     opacity: 0;
+     -webkit-transform: translate3d(100%, 0, 0);
+     -ms-transform: translate3d(100%, 0, 0);
+     transform: translate3d(100%, 0, 0); }
+   100% {
+     opacity: 1;
+     -webkit-transform: none;
+     -ms-transform: none;
+     transform: none; }
+   }
