@@ -2,6 +2,8 @@
 @import "layout";
 @import "navbar";
 @import "works";
+@import "keyframes";
+@import "pageTransitions";
 
 body {
     background: transparent;
@@ -70,4 +72,30 @@ footer {
 
 .tags {
   color: #ccc;
+}
+
+/*
+ * CSS Animations
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene .scene_element {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.m-scene .scene_element--fadein {
+  animation-name: fadeInRight;
+}
+
+.m-scene.is-exiting .scene_element {
+  animation-direction: alternate-reverse;
+}
+
+/*
+ * Keyframes
+ */
+@keyframes fadeInRight {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

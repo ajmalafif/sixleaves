@@ -18,15 +18,18 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    {% include header.html %}
-
-    {{ content }}
-
-    {% include footer.html %}
+    <div id="main" class="m-scene">
+      <div class="scene_element scene_element--fadein">
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+      </div>
+    </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/assets/javascripts/jquery.js"><\/script>')</script>
     <script src="/assets/javascripts/bootstrap.js"></script>
+    <script src="/assets/javascripts/jquery.smoothState.js"></script>
     <script src="/assets/javascripts/jquery.waypoints.js"></script>
     <script>
       var waypoints = $('#work').waypoint({
@@ -44,7 +47,29 @@
         }
       })
     </script>
-
+    <script>
+      // Contents of functions.js
+      ;(function($) {
+        'use strict';
+        var $body = $('html, body'),
+            content = $('#main').smoothState({
+              // Runs when a link has been activated
+              onStart: {
+                duration: 250, // Duration of our animation
+                render: function (url, $container) {
+                  // toggleAnimationClass() is a public method
+                  // for restarting css animations with a class
+                  content.toggleAnimationClass('is-exiting');
+                  // Scroll user to the top
+                  $body.animate({
+                    scrollTop: 0
+                  });
+                }
+              }
+            }).data('smoothState');
+            //.data('smoothState') makes public methods available
+      })(jQuery);
+    </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
