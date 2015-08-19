@@ -19,9 +19,11 @@
     <![endif]-->
 
     <div id="main" class="m-scene">
-      <div class="scene_element scene_element--fadeinright">
+      <div class="scene_element scene_element--fadein">
         {% include header.html %}
         {{ content }}
+      </div>
+      <div class="scene_element scene_element--fadeinup">
         {% include footer.html %}
       </div>
     </div>
@@ -55,16 +57,7 @@
             content = $('#main').smoothState({
               // Runs when a link has been activated
               onStart: {
-                duration: 250, // Duration of our animation
-                render: function (url, $container) {
-                  // toggleAnimationClass() is a public method
-                  // for restarting css animations with a class
-                  content.toggleAnimationClass('is-exiting');
-                  // Scroll user to the top
-                  $body.animate({
-                    scrollTop: 0
-                  });
-                }
+                duration: 250;
               }
             }).data('smoothState');
             //.data('smoothState') makes public methods available

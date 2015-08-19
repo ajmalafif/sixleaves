@@ -10,7 +10,8 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/main.css">
+   {% include base.html %}
+  <link rel="stylesheet" href="{{base}}/css/main.css">
   <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
 </head>
 <body>
@@ -18,13 +19,32 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    {% include header.html %}
-
-    {{ content }}
+    <div id="main" class="m-scene">
+      <div class="scene_element scene_element--fadein">
+      {% include header.html %}
+      {{ content }}
+      </div>
+    </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/assets/javascripts/jquery.js"><\/script>')</script>
-    <script src="/assets/javascripts/bootstrap.js"></script>
+    <script src="{{base}}/assets/javascripts/bootstrap.js"></script>
+    <script src="{{base}}/assets/javascripts/jquery.smoothState.js"></script>
+    <script>
+      // Contents of functions.js
+      ;(function($) {
+        'use strict';
+        var $body = $('html, body'),
+            content = $('#main').smoothState({
+              prefetch: true,
+              pageCacheSize: 4,
+              onStart: {
+                  duration: 250;
+              }
+            }).data('smoothState');
+            //.data('smoothState') makes public methods available
+      })(jQuery);
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

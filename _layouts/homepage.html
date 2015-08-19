@@ -20,8 +20,8 @@
     <![endif]-->
 
     <div id="main" class="m-scene">
-      {% include header.html %}
       <div class="scene_element scene_element--fadein">
+      {% include header.html %}
       {{ content }}
       </div>
     </div>
@@ -39,18 +39,11 @@
               prefetch: true,
               pageCacheSize: 4,
               onStart: {
-                  duration: 250,
-                  render: function (url, $container) {
-                  content.toggleAnimationClass('is-exiting');
-                  $body.animate({
-                      scrollTop: 0
-                  });
-                }
+                  duration: 250;
               }
             }).data('smoothState');
             //.data('smoothState') makes public methods available
       })(jQuery);
-      $('#main').smoothState({ debug: true });
     </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
