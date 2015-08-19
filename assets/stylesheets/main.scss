@@ -197,3 +197,24 @@ footer {
       }
   }
 }
+
+.layout--work {
+  background-color: cadetblue;
+  color: #fff;
+  padding-bottom: 3em;
+  .navbar-default .navbar-brand,
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+.header-work__details {
+    background-color: cadetblue;
+  .navbar-default .navbar-brand,
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+}

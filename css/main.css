@@ -8091,3 +8091,17 @@ footer {
   .m-scene.is-exiting .scene_element {
     -webkit-animation-direction: alternate-reverse;
             animation-direction: alternate-reverse; }
+
+.layout--work {
+  background-color: cadetblue;
+  color: #fff;
+  padding-bottom: 3em; }
+  .layout--work .navbar-default .navbar-brand, .layout--work .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
+
+.header-work__details {
+  background-color: cadetblue; }
+  .header-work__details .navbar-default .navbar-brand, .header-work__details .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }

@@ -20,7 +20,7 @@
 
     <!-- Work/Blog page -->
     <div id="main" class="m-scene">
-      <div class="m-page scene_element scene_element--fadeindown">
+      <div class="m-page layout--work scene_element scene_element--fadeindown">
         {% include work_header.html %}
       </div>
       <div class="m-page scene_element scene_element--fadeinright">
@@ -60,14 +60,15 @@
               pageCacheSize: 4,
               onStart : {
                 duration: 250,
+              // Alterations to the page
+              render: function () {
+                // Quickly toggles a class and restarts css animations
+                content.toggleAnimationClass('is-exiting');
+                // Scroll user to the top
+                $body.animate({ 'scrollTop': 0 });
 
-          // Alterations to the page
-          render: function () {
-
-            // Quickly toggles a class and restarts css animations
-            content.toggleAnimationClass('is-exiting');
+                }
           }
-              }
             }).data('smoothState');
       })(jQuery);
     </script>
