@@ -9,3 +9,5 @@ defaults:
 collections:
   works:
     output: true
+gems:
+  - jekyll-sitemap
