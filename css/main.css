@@ -7977,25 +7977,6 @@ footer {
   color: #ccc; }
 
 /*
- * CSS Animations
- * Don't forget to add vendor prefixes!
- */
-.m-scene .scene_element {
-  -webkit-animation-duration: 0.25s;
-          animation-duration: 0.25s;
-  transition-timing-function: ease-in;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both; }
-
-.m-scene .scene_element--fadein {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn; }
-
-.m-scene.is-exiting .scene_element {
-  -webkit-animation-direction: alternate-reverse;
-          animation-direction: alternate-reverse; }
-
-/*
  * Keyframes
  */
 @keyframes fadeIn {
@@ -8005,95 +7986,108 @@ footer {
   100% {
     opacity: 1; } }
 
-/*
- * CSS Animations
- * Don't forget to add vendor prefixes!
- */
-.m-scene .scene_element {
-  -webkit-animation-duration: 0.25s;
-          animation-duration: 0.25s;
-  transition-timing-function: ease-in;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both; }
-
-.m-scene .scene_element--fadeinright {
-  -webkit-animation-name: fadeInRight;
-          animation-name: fadeInRight; }
-
-.m-scene .scene_element--fadeinup {
-  -webkit-animation-name: fadeInUp;
-          animation-name: fadeInUp; }
-
-.m-scene.is-exiting .scene_element {
-  -webkit-animation-direction: alternate-reverse;
-          animation-direction: alternate-reverse; }
-
-/*
- * Keyframes
- */
-@-webkit-keyframes fadeInRight {
+@keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0); }
 
   100% {
     opacity: 1;
     -webkit-transform: none;
-    transform: none; } }
+            transform: none; } }
 
 @keyframes fadeInRight {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
+            transform: translate3d(100%, 0, 0); }
 
   100% {
     opacity: 1;
     -webkit-transform: none;
-    -ms-transform: none;
-    transform: none; } }
+            transform: none; } }
 
-@-webkit-keyframes fadeOutLeft {
+@-webkit-keyframes fadeInLeft {
   0% {
-    opacity: 1; }
-
-  100% {
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); } }
-
-@keyframes fadeOutLeft {
-  0% {
-    opacity: 1; }
+    transform: translate3d(-100%, 0, 0); }
 
   100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInLeft {
+  0% {
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     -ms-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); } }
-
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
+    transform: translate3d(-100%, 0, 0); }
 
   100% {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none; } }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 1181, /Users/miguelperez/Sites/csstricks/source/stylesheets/keyframes.css.scss */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene {
+  /** Reverse "exit" animations */ }
+  .m-scene .scene_element {
+    -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
+  .m-scene .scene_element--fadein {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn; }
+  .m-scene .scene_element--fadeindown {
+    -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown; }
+  .m-scene .scene_element--fadeinup {
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp; }
+  .m-scene .scene_element--fadeinright {
+    -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight; }
+  .m-scene .scene_element--fadeinleft {
+    -webkit-animation-name: fadeInLeft;
+            animation-name: fadeInLeft; }
+  .m-scene.is-exiting .scene_element {
+    -webkit-animation-direction: alternate-reverse;
+            animation-direction: alternate-reverse; }

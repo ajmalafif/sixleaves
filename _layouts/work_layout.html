@@ -20,8 +20,10 @@
 
     <!-- Work/Blog page -->
     <div id="main" class="m-scene">
-      <div class="m-page scene_element scene_element--fadeinleft">
-        {% include header.html %}
+      <div class="m-page scene_element scene_element--fadeindown">
+        {% include work_header.html %}
+      </div>
+      <div class="m-page scene_element scene_element--fadeinright">
         {{ content }}
         {% include footer.html %}
       </div>
@@ -57,7 +59,14 @@
               prefetch: true,
               pageCacheSize: 4,
               onStart : {
-                duration: 250;
+                duration: 250,
+
+          // Alterations to the page
+          render: function () {
+
+            // Quickly toggles a class and restarts css animations
+            content.toggleAnimationClass('is-exiting');
+          }
               }
             }).data('smoothState');
       })(jQuery);

@@ -19,10 +19,13 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div id="main" class="m-scene">
-      <div class="scene_element scene_element--fadein">
-      {% include header.html %}
-      {{ content }}
+    <!-- Detail page -->
+    <div class="m-scene" id="main">
+      <div class="m-right-panel m-page scene_element scene_element--fadeindown">
+        {% include header_static.html %}
+      </div>
+      <div class="m-right-panel m-page scene_element scene_element--fadeinright">
+        {{ content }}
       </div>
     </div>
 
@@ -31,18 +34,23 @@
     <script src="{{base}}/assets/javascripts/bootstrap.js"></script>
     <script src="{{base}}/assets/javascripts/jquery.smoothState.js"></script>
     <script>
-      // Contents of functions.js
-      ;(function($) {
+      ;(function ($) {
         'use strict';
-        var $body = $('html, body'),
-            content = $('#main').smoothState({
+        var $body    = $('html, body'), // Define jQuery collection
+            content  = $('#main').smoothState({
               prefetch: true,
               pageCacheSize: 4,
-              onStart: {
-                  duration: 250;
+              onStart : {
+                duration: 250,
+
+          // Alterations to the page
+          render: function () {
+
+            // Quickly toggles a class and restarts css animations
+            content.toggleAnimationClass('is-exiting');
+          }
               }
             }).data('smoothState');
-            //.data('smoothState') makes public methods available
       })(jQuery);
     </script>
 
