@@ -19,6 +19,7 @@ To use this starter project, you'll need the following things installed on your 
 
 1. Clone this repo, or download it into a directory of your choice.
 2. Inside the directory, run `npm install`.
+3. Run `bundle install`.
 
 ## Usage
 
